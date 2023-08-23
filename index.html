@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  
+  <title>Age calculator app</title>
+
+</head>
+<body>
+  <div class="main-container">
+    <div class="input-div">
+        <div class="day-div">
+            <p class="title-day">D A Y</p>
+            <form>
+              <input placeholder="DD" class="data-day" type="text" name="day" value="">
+            </form>
+            <p hidden="true" class="invalid-data-day">Invalid day</p>
+        </div>
+        <div class="month-div">
+            <p class="title-month">M O N T H</p>
+            <form>
+              <input placeholder="MM" class="data-month" type="text" name="month">
+            </form>
+            <p hidden="true" class="invalid-data-month">Invalid day</p>
+        </div>
+        <div class="year">
+            <p class="title-year">Y E A R</p>
+            <form>
+              <input placeholder="YYYY" class="data-year" type="text" name="year">
+            </form>
+            <p hidden="true" class="invalid-data-year">Invalid day</p>
+
+        </div>
+    </div>
+    <div class="line">
+      <div class="submit">
+          <img onclick=othername() class="rounded"src="./assets/images/icon-arrow.svg">
+      </div>
+    </div>
+    <div class="result">
+      <div class="years-div">
+        <p class="years"><span class="bold-purple bold-years">- -</span> years</p>
+      </div>
+      <div class="months-div">
+        <p class="months"><span class="bold-purple bold-months">- - </span>months</p>
+      </div>
+      <div class="days-div">
+        <p class="days"><span class="bold-purple bold-days">- - </span>days</p>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
